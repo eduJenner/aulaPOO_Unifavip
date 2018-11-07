@@ -8,12 +8,9 @@
  *
  * @author eduardojenner
  */
-public class Funcionario {
-        int id;
-        String nome;
-        String cpf;
-        String endereco;
-        
-
-
+public class Menu {
+    
+public void exibirMenuPrincipal(){
+    System.out.println("menu principal da lanchonete!");
+}    
 }
