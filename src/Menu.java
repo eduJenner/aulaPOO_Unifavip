@@ -10,6 +10,7 @@
  */
 public class Menu {
     
+    
 public void exibirMenuPrincipal(){
     System.out.println("menu principal da lanchonete!");
 }    

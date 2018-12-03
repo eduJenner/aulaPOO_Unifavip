@@ -9,13 +9,19 @@
  * @author eduardojenner
  */
 public class Pedido {
-    int id;
+    private int numero=100;
 
-public void novoPedido(){
-    
-}
-public void cancelarPedido(){
-    
-}
+    public int getNumero() {
+        return numero;
+    }
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
+    public int gerarNumeroDoPedido(){
+        int numeroGerado = (int) (Math.random() * this.numero);
+     return numeroGerado;
+    }
+  
 }

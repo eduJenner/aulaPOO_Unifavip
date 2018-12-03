@@ -8,12 +8,8 @@
  *
  * @author eduardojenner
  */
-public class Funcionario {
-        int id;
-        String nome;
-        String cpf;
-        String endereco;
-        
+public class Funcionario extends Pessoa {
+      
 
 
 }

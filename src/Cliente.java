@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,10 +11,17 @@
  *
  * @author leonardo
  */
-public class Lanche {
-    int id;
-    String nome;
-    double preco;
+public class Cliente extends Pessoa {
+       
+       
+   
     
-
+    
+    public void cadastrarCliente(){
+       
+     
+        
+    }
+   
+    
 }
