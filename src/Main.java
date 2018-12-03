@@ -18,10 +18,20 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
       Scanner t = new Scanner(System.in);
       
+      Funcionario f1 = new Funcionario();
+      f1.setNome("João");
+     
+      System.out.println("informe o nome do cliente:");
+      Cliente c1 = new Cliente();
+      c1.cadastrar(t.nextLine());
       
       
+     
+      
+        
       ArrayList<Lanche> lanches = new ArrayList();
        
        Lanche lanche1 = new Lanche(1,"cheeseburguer",4.00);
@@ -47,6 +57,8 @@ public class Main {
             System.out.println("5 copo de suco R$ 2.00");
             System.out.println("6 finalizar o pedido \n");
             opcao = t.nextInt();
+            
+      
         
     while(opcao!=6){     
        switch(opcao){
@@ -69,7 +81,9 @@ public class Main {
             case 5:
                System.out.println("voce adicionou "+ lanches.get(4));
                total += lanche5.getPreco();
-                break;    
+                break;
+            default:
+                System.out.println("Opção inválida");
       }
         System.out.println("deseja adicionar mais algum item? para encerrar o pedido digite 6:\n");
         System.out.println("1 cheeseburguer R$ 4.00");
@@ -80,16 +94,24 @@ public class Main {
         System.out.println("6 finalizar o pedido");
            
         opcao = t.nextInt();
-        System.out.println("\n total a pagar: R$: "+ total);         
+                
     }
+    
+    if(total!=0){
+        System.out.println("\n Nome do Cliente:"+ c1.getNome() + "\n");
+        System.out.println("Funcionario:"+ f1.getNome()+ "\n");
     //gera o código do pedido
         Pedido p1 = new Pedido();
         System.out.println("O código do pedido é: ");
         System.out.println(p1.gerarNumeroDoPedido());
-       }
-           
-     
+         System.out.println("\n total a pagar: R$: "+ total);
       
+    }else{
+    System.out.println("saindo do sistema você não comprou nada!");
+    }
+    
+}
+     
        
 }
     

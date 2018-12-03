@@ -15,6 +15,7 @@ public abstract class Pessoa {
        private String endereco;
        private String numero; 
 
+       
     public int getId() {
         return id;
     }
@@ -55,5 +56,7 @@ public abstract class Pessoa {
         this.numero = numero;
     }
        
-       
+    public void cadastrar(String nome){
+        
+    }   
 }

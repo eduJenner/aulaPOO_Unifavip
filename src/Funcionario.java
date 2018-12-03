@@ -9,7 +9,6 @@
  * @author eduardojenner
  */
 public class Funcionario extends Pessoa {
-      
 
 
 }

@@ -16,10 +16,9 @@ public class Cliente extends Pessoa {
        
    
     
-    
-    public void cadastrarCliente(){
-       
-     
+    @Override
+    public void cadastrar(String nome){
+        setNome(nome);
         
     }
    
